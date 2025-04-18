@@ -5,6 +5,7 @@ import './App.css'
 // Pages
 import Introduction from './pages/Introduction'
 import SoapMethod from './pages/SoapMethod'
+import SoapMethodExamples from './pages/SoapMethodExamples'
 import Interactive from './pages/Interactive'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <div className="flex items-center space-x-4">
                 <Link to="/" className="hover:underline">Introduction <span className="text-xs">簡介</span></Link>
                 <Link to="/soap-method" className="hover:underline">SOAP Method <span className="text-xs">方法</span></Link>
+                <Link to="/soap-examples" className="hover:underline">Examples <span className="text-xs">例子</span></Link>
                 <Link to="/interactive" className="hover:underline">Interactive <span className="text-xs">互動</span></Link>
                 <button 
                   onClick={toggleDarkMode} 
@@ -45,6 +47,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Introduction />} />
                 <Route path="/soap-method" element={<SoapMethod />} />
+                <Route path="/soap-examples" element={<SoapMethodExamples />} />
                 <Route path="/interactive" element={<Interactive />} />
               </Routes>
             </div>

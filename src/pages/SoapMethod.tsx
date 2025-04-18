@@ -282,7 +282,7 @@ const SoapMethod: React.FC = () => {
 
       <div className="text-center mt-8">
         <p className="mb-4">Ready to try the SOAP method yourself?</p>
-        <a href="/interactive" className="btn-primary">Continue to Interactive Study →</a>
+        <a href="/soap-examples" className="btn-primary">Continue to More Examples →</a>
       </div>
     </div>
   )
