@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SoapMethodExamples: React.FC = () => {
   const [activeTab, setActiveTab] = useState('example1')
@@ -353,8 +354,8 @@ const SoapMethodExamples: React.FC = () => {
 
       <div className="text-center mt-8">
         <div className="flex flex-col md:flex-row justify-center gap-4">
-          <a href="/soap-method" className="btn-secondary">← Back to SOAP Method</a>
-          <a href="/interactive" className="btn-primary">Continue to Interactive Study →</a>
+          <Link to="/soap-method" className="btn-secondary">← Back to SOAP Method</Link>
+          <Link to="/interactive" className="btn-primary">Continue to Interactive Study →</Link>
         </div>
       </div>
     </div>

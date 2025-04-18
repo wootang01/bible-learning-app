@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SoapMethod: React.FC = () => {
   const [activeTab, setActiveTab] = useState('overview')
@@ -282,7 +283,7 @@ const SoapMethod: React.FC = () => {
 
       <div className="text-center mt-8">
         <p className="mb-4">Ready to try the SOAP method yourself?</p>
-        <a href="/soap-examples" className="btn-primary">Continue to More Examples →</a>
+        <Link to="/soap-examples" className="btn-primary">Continue to More Examples →</Link>
       </div>
     </div>
   )
