@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Introduction: React.FC = () => {
   return (
@@ -122,7 +123,7 @@ const Introduction: React.FC = () => {
       
       <div className="text-center mt-8">
         <p className="mb-4">Ready to learn a Catholic method for studying the Bible?</p>
-        <a href="/soap-method" className="btn-primary">Continue to SOAP Method →</a>
+        <Link to="/soap-method" className="btn-primary">Continue to SOAP Method →</Link>
       </div>
     </div>
   )
